@@ -1,0 +1,266 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 600;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  /* About Section */
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .about .container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .profile-img {
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .bio {
+    max-width: 600px;
+  }
+  
+  .bio h2 {
+    margin-bottom: 20px;
+  }
+  
+  .bio p {
+    font-size: 1.1em;
+    color: #777;
+  }
+  
+  /* Skills Section */
+  .skills {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .skills h2 {
+    margin-bottom: 30px;
+  }
+  
+  .skill-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .skill-list li {
+    margin: 0 20px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Portfolio Section */
+  .portfolio {
+    padding: 40px 20px;
+  }
+  
+  .portfolio h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .portfolio-item {
+    text-align: center;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .portfolio-item p {
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    margin-bottom: 30px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer ul.social-media {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer ul.social-media li {
+    margin: 0 10px;
+  }
+  
+  footer ul.social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  /* Hide navigation links by default on mobile */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+/* Hide hamburger menu initially on desktop */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Mobile-first styles */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide navigation links */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #3
+    33;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin-bottom: 15px;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu */
+  }
+
+  .nav-links.active {
+    display: block; /* Show the menu when active */
+  }
+}
+.portfolio-item img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}

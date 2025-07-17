@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">My Portfolio</div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <meta name="description" content="A web developer portfolio showcasing my skills and projects.">
+<meta name="keywords" content="Web Developer, Portfolio, HTML, CSS, JavaScript, React">
+<meta name="author" content="Your Name">
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Hello, I'm Abdul Rafe</h1>
+      <p>Web Developer | Designer | Problem Solver</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <img src="1.jpg" alt="Profile Picture" class="profile-img" />
+        <div class="bio">
+          <h2>About Me</h2>
+          <p>
+            I'm a passionate web developer with a focus on building responsive,
+            user-friendly websites. I love coding, learning new technologies,
+            and creating unique solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <ul class="skill-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <h2>My Work</h2>
+      <div class="portfolio-items">
+        <div class="portfolio-item">
+          <a href="https://link-to-project1.com" target="_blank">
+            <img src="2.jpg" alt="Project 1" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+             
+            </p>
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a href="https://link-to-project2.com" target="_blank">
+            <img src="3.jpg" alt="Project 2" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+        <h2>What People Say</h2>
+        <div class="testimonial-item">
+          <p>"He is a great student."</p>
+          <cite>-Tamanna Sir </cite>
+        </div>
+      </section>
+      
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form action="mailto:youremail@example.com" method="get">
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 My Portfolio</p>
+      <ul class="social-media">
+        <li>
+          <a
+            href="https://in.linkedin.com/in/mohammed-abdul-rafe-sajid-49a716291"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/Mohammed-Abdul-Rafe-Sajid">GitHub</a>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("active");
+      }
+      const form = document.querySelector("form");
+      form.addEventListener("submit", function (event) {
+        const email = form.querySelector('input[name="email"]');
+        const message = form.querySelector('textarea[name="message"]');
+
+        // Basic validation
+        if (email.value.trim() === "" || message.value.trim() === "") {
+          alert("Please fill out both fields.");
+          event.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>
