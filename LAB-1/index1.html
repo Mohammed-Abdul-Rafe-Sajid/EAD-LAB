@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+<meta property="og:title" content="Abdul Rafe – Web Developer Portfolio" />
+<meta property="og:description" content="Portfolio of Abdul Rafe – Web Developer and Designer" />
+<meta property="og:image" content="1.jpg" />
+<meta property="og:url" content="https://your-portfolio-link.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -28,13 +37,13 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" data-aos="fade-up">
       <h1>Hello, I'm Abdul Rafe</h1>
       <p>Web Developer | Designer | Problem Solver</p>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about" data-aos="fade-right">
       <div class="container">
         <img src="1.jpg" alt="Profile Picture" class="profile-img" />
         <div class="bio">
@@ -49,7 +58,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section class="skills" data-aos="zoom-in">
       <h2>My Skills</h2>
       <ul class="skill-list">
         <li>HTML</li>
@@ -61,7 +70,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio" data-aos="fade-up">
       <h2>My Work</h2>
       <div class="portfolio-items">
         <div class="portfolio-item">
@@ -93,13 +102,14 @@
       
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" data-aos="fade-up">
       <h2>Contact Me</h2>
-      <form action="mailto:youremail@example.com" method="get">
+      <form action="https://formspree.io/f/xzzvbnnj" method="POST">
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
+      
     </section>
 
     <!-- Footer -->
@@ -134,5 +144,10 @@
         }
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
   </body>
 </html>
