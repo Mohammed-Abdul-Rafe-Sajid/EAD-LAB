@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 550px;
+            width: 450px;
+            border: 2px solid black;
+            background-color: rgb(22, 37, 36);
+            border-radius: 15px;
+            padding: 15px;
+        }
+        input{
+            height: 50px;
+            width: 440px;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        button {
+            text-align: center;
+            justify-content: center;
+            background-color: #aef016;
+            border-radius: 7px;
+            margin: 4px 4px;
+            height: 50px;
+            font-size: 40px;
+
+        }
+
+
+
+
+        .one {
+            border-bottom-left-radius: 15px;
+            border-top-left-radius: 15px;
+            margin-left: 15px;
+
+        }
+
+        .two {
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="display">
+            <input type="text" disabled>
+        </div>
+
+
+        <div class="buttons">
+            <button onclick="clear()">C</button>
+            <button onclick="clear()">.</button>
+            <button onclick="clear()">=</button>
+            <button onclick="clear()">+</button>
+
+            <button onclick="clear()">1</button>
+            <button onclick="clear()">2</button>
+            <button onclick="clear()">3</button>
+            <button onclick="clear()">-</button>
+
+            <button onclick="clear()">4</button>
+            <button onclick="clear()">5</button>
+            <button onclick="clear()">6</button>
+            <button onclick="clear()">x</button>
+
+            <button onclick="clear()">7</button>
+            <button onclick="clear()">8</button>
+            <button onclick="clear()">9</button>
+            <button onclick="clear()">/</button>
+
+            <button onclick="clear()">0</button>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
